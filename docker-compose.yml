@@ -1,0 +1,18 @@
+---
+version: '2'
+services:
+  node:
+    build: .
+    volumes:
+      - ./src:/build/src
+      - ./scripts:/build/scripts
+      - ./package.json:/build/package.json
+      - ./.eslintrc.js:/build/.eslintrc.js
+      - ./.eslintignore:/build/.eslintignore
+      - ./coverage:/build/coverage
+      - ./__mocks__:/build/__mocks__
+    environment:
+      - NODE_ENV=test
+      - PORT=50051
+      - HOST=0.0.0.0
+      - DEBUG=
