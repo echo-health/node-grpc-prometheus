@@ -33,7 +33,7 @@
     "nsp": "^3.2.1",
     "prom-client": "^11.0.0",
     "prometheus-gc-stats": "^0.5.1",
-    "protobufjs": "^6.8.6"
+    "protobufjs": "^6.11.3"
   },
   "devDependencies": {
     "eslint": "4.14.0",
